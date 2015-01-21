@@ -14,6 +14,9 @@
 		04BF68C51A704FF00025FEA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BF68C41A704FF00025FEA0 /* Images.xcassets */; };
 		04BF68C81A704FF00025FEA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF68C61A704FF00025FEA0 /* LaunchScreen.xib */; };
 		04BF68D41A704FF10025FEA0 /* To_DoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF68D31A704FF10025FEA0 /* To_DoTests.m */; };
+		04BF68E21A7050F60025FEA0 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF68E11A7050F60025FEA0 /* AddTaskViewController.m */; };
+		04BF68E51A7051130025FEA0 /* DetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF68E41A7051130025FEA0 /* DetailTaskViewController.m */; };
+		04BF68E81A7051290025FEA0 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF68E71A7051290025FEA0 /* EditTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		04BF68CD1A704FF10025FEA0 /* To DoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To DoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF68D21A704FF10025FEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BF68D31A704FF10025FEA0 /* To_DoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = To_DoTests.m; sourceTree = "<group>"; };
+		04BF68E01A7050F60025FEA0 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		04BF68E11A7050F60025FEA0 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		04BF68E31A7051130025FEA0 /* DetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailTaskViewController.h; path = ../DetailTaskViewController.h; sourceTree = "<group>"; };
+		04BF68E41A7051130025FEA0 /* DetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailTaskViewController.m; path = ../DetailTaskViewController.m; sourceTree = "<group>"; };
+		04BF68E61A7051290025FEA0 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditTaskViewController.h; path = ../EditTaskViewController.h; sourceTree = "<group>"; };
+		04BF68E71A7051290025FEA0 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditTaskViewController.m; path = ../EditTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,12 @@
 		04BF68B61A704FF00025FEA0 /* To Do */ = {
 			isa = PBXGroup;
 			children = (
+				04BF68E61A7051290025FEA0 /* EditTaskViewController.h */,
+				04BF68E71A7051290025FEA0 /* EditTaskViewController.m */,
+				04BF68E31A7051130025FEA0 /* DetailTaskViewController.h */,
+				04BF68E41A7051130025FEA0 /* DetailTaskViewController.m */,
+				04BF68E01A7050F60025FEA0 /* AddTaskViewController.h */,
+				04BF68E11A7050F60025FEA0 /* AddTaskViewController.m */,
 				04BF68BB1A704FF00025FEA0 /* AppDelegate.h */,
 				04BF68BC1A704FF00025FEA0 /* AppDelegate.m */,
 				04BF68BE1A704FF00025FEA0 /* ViewController.h */,
@@ -220,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF68C01A704FF00025FEA0 /* ViewController.m in Sources */,
+				04BF68E21A7050F60025FEA0 /* AddTaskViewController.m in Sources */,
 				04BF68BD1A704FF00025FEA0 /* AppDelegate.m in Sources */,
+				04BF68E81A7051290025FEA0 /* EditTaskViewController.m in Sources */,
 				04BF68BA1A704FF00025FEA0 /* main.m in Sources */,
+				04BF68E51A7051130025FEA0 /* DetailTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
