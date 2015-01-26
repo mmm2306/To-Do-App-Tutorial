@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044542371A7262C2005E8B75 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 044542361A7262C2005E8B75 /* Task.m */; };
 		04BF68BA1A704FF00025FEA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF68B91A704FF00025FEA0 /* main.m */; };
 		04BF68BD1A704FF00025FEA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF68BC1A704FF00025FEA0 /* AppDelegate.m */; };
 		04BF68C01A704FF00025FEA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF68BF1A704FF00025FEA0 /* ViewController.m */; };
@@ -30,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044542331A7247B7005E8B75 /* ToDo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ToDo-Prefix.pch"; path = "../ToDo-Prefix.pch"; sourceTree = "<group>"; };
+		044542351A7262C2005E8B75 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		044542361A7262C2005E8B75 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		04BF68B41A704FF00025FEA0 /* To Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF68B81A704FF00025FEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BF68B91A704FF00025FEA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044542341A72626C005E8B75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				044542351A7262C2005E8B75 /* Task.h */,
+				044542361A7262C2005E8B75 /* Task.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		04BF68AB1A704FF00025FEA0 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 				04BF68C11A704FF00025FEA0 /* Main.storyboard */,
 				04BF68C41A704FF00025FEA0 /* Images.xcassets */,
 				04BF68C61A704FF00025FEA0 /* LaunchScreen.xib */,
+				044542341A72626C005E8B75 /* Model */,
 				04BF68B71A704FF00025FEA0 /* Supporting Files */,
 			);
 			path = "To Do";
@@ -113,6 +127,7 @@
 			children = (
 				04BF68B81A704FF00025FEA0 /* Info.plist */,
 				04BF68B91A704FF00025FEA0 /* main.m */,
+				044542331A7247B7005E8B75 /* ToDo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044542371A7262C2005E8B75 /* Task.m in Sources */,
 				04BF68C01A704FF00025FEA0 /* ViewController.m in Sources */,
 				04BF68E21A7050F60025FEA0 /* AddTaskViewController.m in Sources */,
 				04BF68BD1A704FF00025FEA0 /* AppDelegate.m in Sources */,
@@ -361,6 +377,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ToDo-Prefix.pch";
 				INFOPLIST_FILE = "To Do/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,6 +389,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ToDo-Prefix.pch";
 				INFOPLIST_FILE = "To Do/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +450,7 @@
 				04BF68D91A704FF10025FEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BF68DA1A704FF10025FEA0 /* Build configuration list for PBXNativeTarget "To DoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +459,7 @@
 				04BF68DC1A704FF10025FEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

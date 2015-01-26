@@ -24,6 +24,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(Task*)returnNewTaskObject{
+    Task *task = [[Task alloc] init];
+    task.title = self.textField.text;
+    task.taskDescription = self.textView.text;
+    task.date = self.datePicker.date;
+    task.isCompleted = NO;
+    
+    return task;
+}
+
+-(IBAction)addTaskButtonPressed:(id)sender{
+    [self.delegate didAddTask:[self returnNewTaskObject]];
+}
+
+
+-(IBAction)cancelTaskButtonPressed:(id)sender{
+    [self.delegate didCancel];
+}
 /*
 #pragma mark - Navigation
 
