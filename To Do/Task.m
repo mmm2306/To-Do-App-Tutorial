@@ -15,7 +15,7 @@
     self = [super init];
     
     if (self) {
-        self.title = data[TASK_COMPLETION];
+        self.title = data[TASK_TITLE];
         self.taskDescription = data[TASK_DESCRIPTION];
         self.date = data[TASK_DATE];
         self.isCompleted = [data[TASK_COMPLETION] boolValue];

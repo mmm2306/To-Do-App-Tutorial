@@ -14,13 +14,15 @@
 
 @implementation ViewController
 
--(NSMutableArray *)taskobjects{
+-(NSMutableArray *)taskObjects
+{
     if (!_taskObjects) {
         _taskObjects = [[NSMutableArray alloc] init];
     }
     
     return _taskObjects;
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,7 +69,6 @@
     
     [self.taskObjects addObject:task];
     
-    
     NSMutableArray *taskObjectsAsPropertyLists = [[[NSUserDefaults standardUserDefaults] arrayForKey:TASK_OBJECTS_KEY] mutableCopy];
     
     if (!taskObjectsAsPropertyLists) {
@@ -108,7 +109,6 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return [self.taskObjects count];
-    
 
 }
 
